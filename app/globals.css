@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* ===== PRIMARY COLORS (From BenchLink+ Logo) ===== */
+  --color-primary-blue: #1A3D7C;      /* Logo blue - dominates ~60-70% */
+  --color-accent-orange: #F26522;     /* Logo orange - energetic accent ~15-20% */
+
+  /* ===== NEUTRAL BACKGROUNDS ===== */
+  --color-background-white: #FFFFFF;  /* Clean backgrounds ~70% */
+  --color-background-light: #F8FAFC;  /* Subtle section dividers */
+  --color-background-warm: #FFF8F3;   /* Optional warm tint for hero sections */
+
+  /* ===== TEXT HIERARCHY ===== */
+  --color-text-primary: #1E293B;      /* Headings, body text */
+  --color-text-secondary: #64748B;    /* Subheadings, captions */
+  --color-text-muted: #94A3B8;        /* Meta info, timestamps */
+
+  /* ===== SEMANTIC COLORS ===== */
+  --color-success: #10B981;           /* Form success states */
+  --color-error: #EF4444;             /* Validation errors */
+  --color-warning: #F59E0B;           /* Optional alerts */
+
+  /* ===== PREMIUM ACCENTS ===== */
+  --color-gold-subtle: #D4A042;       /* Optional: achievement badges, premium markers */
+
+  /* ===== SPACING & LAYOUT ===== */
+  --max-width-container: 1280px;
+  --max-width-content: 1024px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply text-text-primary bg-background-white;
+  }
+  
+  /* Typography hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-neutral-900;
+    letter-spacing: -0.02em;
+  }
+  
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+  
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+  
+  p {
+    @apply text-base leading-relaxed;
+  }
+  
+  /* Focus styles for accessibility - WCAG 2.2 AA compliant */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent ring-2 ring-accent ring-offset-2;
+  }
+  
+  /* Skip to content link for accessibility */
+  .skip-to-content {
+    @apply sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50;
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-medium;
+  }
+}
+
+@layer components {
+  /* ===== BUTTON COMPONENTS ===== */
+  .btn-primary {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium text-base;
+    @apply hover:bg-accent-dark transition-all duration-200 ease-in-out;
+    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply shadow-md hover:shadow-lg;
+    min-height: 44px; /* WCAG touch target size */
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-primary text-primary px-6 py-3 rounded-lg font-medium text-base;
+    @apply hover:bg-primary hover:text-white transition-all duration-200 ease-in-out;
+    @apply focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    @apply disabled:opacity-50 disabled:cursor-not-allowed;
+    min-height: 44px;
+  }
+  
+  .btn-outline-orange {
+    @apply bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-lg font-medium text-base;
+    @apply hover:bg-accent hover:text-white transition-all duration-200 ease-in-out;
+    @apply focus:ring-2 focus:ring-accent focus:ring-offset-2;
+    min-height: 44px;
+  }
+  
+  /* ===== CARD COMPONENTS ===== */
+  .card {
+    @apply bg-white rounded-xl border border-neutral-200 p-6;
+    @apply shadow-card hover:shadow-card-hover transition-shadow duration-300;
+  }
+  
+  .card-interactive {
+    @apply card cursor-pointer;
+    @apply hover:border-accent hover:-translate-y-1 transition-all duration-300;
+  }
+  
+  /* ===== SECTION CONTAINERS ===== */
+  .section {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .section-alt {
+    @apply section bg-background-light;
+  }
+  
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  /* ===== FORM ELEMENTS ===== */
+  .input-field {
+    @apply w-full px-4 py-3 border border-neutral-300 rounded-lg;
+    @apply focus:ring-2 focus:ring-accent focus:border-accent;
+    @apply disabled:bg-neutral-100 disabled:cursor-not-allowed;
+    @apply transition-colors duration-200;
+    min-height: 44px;
+  }
+  
+  .label-field {
+    @apply block text-sm font-medium text-neutral-700 mb-2;
+  }
+  
+  .error-message {
+    @apply text-error text-sm mt-1;
+  }
+  
+  /* ===== TRUST BADGES ===== */
+  .trust-badge {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full;
+    @apply bg-primary/5 text-primary border border-primary/20;
+    @apply font-medium text-sm;
+  }
+  
+  /* ===== STAT CARDS ===== */
+  .stat-card {
+    @apply text-center p-6 rounded-lg bg-white border border-neutral-200;
+  }
+  
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold text-primary mb-2;
+  }
+  
+  .stat-label {
+    @apply text-sm text-neutral-600 uppercase tracking-wide;
+  }
+}
+
+@layer utilities {
+  /* Text gradient utilities */
+  .text-gradient-blue-orange {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  /* Container utilities */
+  .max-w-container {
+    max-width: var(--max-width-container);
+  }
+  
+  /* Animation delay utilities */
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
+
+/* ===== ACCESSIBILITY: Reduced motion support ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    @apply text-black bg-white;
+  }
+}
+
+/* ===== CHINESE FONT OPTIMIZATION ===== */
+html[lang="zh"] body {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+/* ===== PORTUGUESE FONT OPTIMIZATION ===== */
+html[lang="pt"] body {
+  font-family: 'Inter', system-ui, sans-serif;
+}

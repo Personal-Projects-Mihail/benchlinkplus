@@ -1,0 +1,123 @@
+{
+  "common": {
+    "siteName": "BenchLink+",
+    "tagline": "连接全球创新领袖",
+    "learnMore": "了解更多",
+    "readMore": "阅读更多",
+    "contactUs": "联系我们",
+    "getStarted": "立即开始",
+    "exploreNow": "立即探索",
+    "requestConsultation": "申请咨询",
+    "downloadBrochure": "下载手册",
+    "viewAllCases": "查看所有案例",
+    "backToHome": "返回首页"
+  },
+  
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务项目",
+    "domesticRoutes": "国内路线",
+    "internationalRoutes": "国际路线",
+    "caseStudies": "成功案例",
+    "inquiry": "立即预约",
+    "contact": "联系方式",
+    "languageSwitcher": "切换语言"
+  },
+  
+  "hero": {
+    "title": "与全球创新领袖深度交流",
+    "subtitle": "专属标杆学习体验",
+    "description": "深度考察特斯拉、字节跳动、德国工业4.0标杆企业等全球42个国家的世界级公司。通过高管对话和实地参访，助力企业转型升级。",
+    "ctaPrimary": "探索路线",
+    "ctaSecondary": "定制考察方案"
+  },
+  
+  "stats": {
+    "delegations": "285+",
+    "delegationsLabel": "成功考察团",
+    "countries": "42",
+    "countriesLabel": "覆盖国家",
+    "loyalty": "98%",
+    "loyaltyLabel": "客户满意度",
+    "companies": "500+",
+    "companiesLabel": "合作企业"
+  },
+  
+  "services": {
+    "title": "世界级标杆学习体验",
+    "subtitle": "量身定制的考察方案，驱动真正的业务转型",
+    "domesticTitle": "中国创新枢纽",
+    "domesticDescription": "深度考察上海、深圳、苏州创新生态系统和智能制造领军企业",
+    "internationalTitle": "全球路线",
+    "internationalDescription": "德国工业4.0、硅谷科技、葡萄牙创新、日本精益制造等国际标杆",
+    "consultingTitle": "定制咨询",
+    "consultingDescription": "智能制造诊断、数字化转型路线图、创新工作坊等专业咨询服务"
+  },
+  
+  "howItWorks": {
+    "title": "服务流程",
+    "step1Title": "需求咨询",
+    "step1Description": "深入了解您的目标、行业挑战和学习需求",
+    "step2Title": "定制方案",
+    "step2Description": "量身打造考察方案，确保独家企业访问和专家引导",
+    "step3Title": "深度考察",
+    "step3Description": "参访标杆企业，实地考察工厂，与高管深度对话",
+    "step4Title": "后续支持",
+    "step4Description": "提供落地指导、跟进会议和持续合作支持"
+  },
+  
+  "cta": {
+    "title": "准备好提升您的团队了吗？",
+    "description": "加入285+家通过BenchLink+项目提升创新能力的企业行列",
+    "button": "申请定制考察"
+  },
+  
+  "footer": {
+    "about": "关于BenchLink+",
+    "aboutDescription": "全球领先的高管标杆学习平台，提供42个国家Fortune 500企业的独家访问机会。",
+    "quickLinks": "快速链接",
+    "services": "服务项目",
+    "legal": "法律信息",
+    "privacyPolicy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie政策",
+    "contact": "联系方式",
+    "email": "邮箱",
+    "phone": "电话",
+    "address": "地址",
+    "followUs": "关注我们",
+    "rights": "© 2024 BenchLink+ & 万玺科技 版权所有",
+    "icpNotice": "ICP备案号：[待提供]"
+  },
+  
+  "form": {
+    "nameLabel": "姓名",
+    "namePlaceholder": "张三",
+    "emailLabel": "电子邮箱",
+    "emailPlaceholder": "zhangsan@company.com",
+    "phoneLabel": "联系电话",
+    "phonePlaceholder": "+86 138 0000 0000",
+    "companyLabel": "公司名称",
+    "companyPlaceholder": "您的公司",
+    "jobTitleLabel": "职位",
+    "jobTitlePlaceholder": "CEO、CTO、运营副总裁等",
+    "industryLabel": "所属行业",
+    "industryPlaceholder": "选择您的行业",
+    "participantsLabel": "参与人数",
+    "routeLabel": "意向路线/目的地",
+    "routePlaceholder": "选择路线或定制",
+    "datesLabel": "意向时间",
+    "datesPlaceholder": "选择日期范围或灵活安排",
+    "budgetLabel": "预算范围",
+    "budgetPlaceholder": "选择预算范围",
+    "messageLabel": "具体需求",
+    "messagePlaceholder": "请告诉我们您的目标、挑战以及期望达成的成果...",
+    "required": "必填",
+    "submit": "提交咨询",
+    "submitting": "提交中...",
+    "successTitle": "感谢您的咨询！",
+    "successMessage": "我们已收到您的申请，将在24小时内与您联系。",
+    "errorMessage": "提交失败，请重试或直接联系我们。"
+  }
+}

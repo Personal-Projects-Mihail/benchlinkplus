@@ -1,0 +1,123 @@
+{
+  "common": {
+    "siteName": "BenchLink+",
+    "tagline": "Connecting Global Innovation Leaders",
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "getStarted": "Get Started",
+    "exploreNow": "Explore Now",
+    "requestConsultation": "Request Consultation",
+    "downloadBrochure": "Download Brochure",
+    "viewAllCases": "View All Case Studies",
+    "backToHome": "Back to Home"
+  },
+  
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "domesticRoutes": "Domestic Routes",
+    "internationalRoutes": "International Routes",
+    "caseStudies": "Case Studies",
+    "inquiry": "Book Now",
+    "contact": "Contact",
+    "languageSwitcher": "Switch Language"
+  },
+  
+  "hero": {
+    "title": "Connect with Global Innovation Leaders",
+    "subtitle": "Exclusive Benchmarking Experiences",
+    "description": "Executive study tours to world-class companies across 42 countries. Transform your team through direct access to Tesla, ByteDance, German Industry 4.0 pioneers, and more.",
+    "ctaPrimary": "Explore Routes",
+    "ctaSecondary": "Request Custom Tour"
+  },
+  
+  "stats": {
+    "delegations": "285+",
+    "delegationsLabel": "Successful Delegations",
+    "countries": "42",
+    "countriesLabel": "Countries Covered",
+    "loyalty": "98%",
+    "loyaltyLabel": "Client Loyalty Rate",
+    "companies": "500+",
+    "companiesLabel": "Partner Companies"
+  },
+  
+  "services": {
+    "title": "World-Class Benchmarking Experiences",
+    "subtitle": "Customized study tours that drive real business transformation",
+    "domesticTitle": "China Innovation Hubs",
+    "domesticDescription": "Access Shanghai, Shenzhen, Suzhou innovation ecosystems and smart manufacturing leaders",
+    "internationalTitle": "Global Routes",
+    "internationalDescription": "Germany Industry 4.0, Silicon Valley tech, Portugal innovation, and Japan lean manufacturing",
+    "consultingTitle": "Custom Consulting",
+    "consultingDescription": "Intelligent manufacturing diagnostics, digital transformation roadmaps, innovation workshops"
+  },
+  
+  "howItWorks": {
+    "title": "How It Works",
+    "step1Title": "Consultation",
+    "step1Description": "We understand your objectives, industry challenges, and learning goals",
+    "step2Title": "Custom Itinerary",
+    "step2Description": "Tailored program with exclusive company access and expert facilitators",
+    "step3Title": "Exclusive Access",
+    "step3Description": "Visit benchmark companies with behind-the-scenes tours and executive dialogues",
+    "step4Title": "Post-Visit Support",
+    "step4Description": "Implementation guidance, follow-up sessions, and ongoing collaboration"
+  },
+  
+  "cta": {
+    "title": "Ready to Transform Your Team?",
+    "description": "Join 285+ organizations that have elevated their innovation capability through BenchLink+ programs",
+    "button": "Request a Custom Tour"
+  },
+  
+  "footer": {
+    "about": "About BenchLink+",
+    "aboutDescription": "Leading global platform for executive benchmarking tours and innovation expeditions. Direct access to Fortune 500 companies across 42 countries.",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "contact": "Contact Information",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "followUs": "Follow Us",
+    "rights": "© 2024 BenchLink+ & Wanxi Tech. All rights reserved.",
+    "icpNotice": ""
+  },
+  
+  "form": {
+    "nameLabel": "Full Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email Address",
+    "emailPlaceholder": "john@company.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "companyLabel": "Company Name",
+    "companyPlaceholder": "Your Company",
+    "jobTitleLabel": "Job Title",
+    "jobTitlePlaceholder": "CEO, CTO, VP Operations, etc.",
+    "industryLabel": "Industry",
+    "industryPlaceholder": "Select your industry",
+    "participantsLabel": "Number of Participants",
+    "routeLabel": "Preferred Route/Destination",
+    "routePlaceholder": "Select a route or Custom",
+    "datesLabel": "Preferred Dates",
+    "datesPlaceholder": "Select date range or Flexible",
+    "budgetLabel": "Budget Range",
+    "budgetPlaceholder": "Select budget range",
+    "messageLabel": "Specific Requirements",
+    "messagePlaceholder": "Tell us about your objectives, challenges, and what you hope to achieve...",
+    "required": "Required",
+    "submit": "Submit Inquiry",
+    "submitting": "Submitting...",
+    "successTitle": "Thank You!",
+    "successMessage": "We've received your inquiry and will contact you within 24 hours.",
+    "errorMessage": "Something went wrong. Please try again or contact us directly."
+  }
+}

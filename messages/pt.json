@@ -1,0 +1,123 @@
+{
+  "common": {
+    "siteName": "BenchLink+",
+    "tagline": "Conectando Líderes de Inovação Global",
+    "learnMore": "Saiba Mais",
+    "readMore": "Ler Mais",
+    "contactUs": "Contacte-nos",
+    "getStarted": "Começar",
+    "exploreNow": "Explorar Agora",
+    "requestConsultation": "Solicitar Consultoria",
+    "downloadBrochure": "Descarregar Brochura",
+    "viewAllCases": "Ver Todos os Casos",
+    "backToHome": "Voltar ao Início"
+  },
+  
+  "nav": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "services": "Serviços",
+    "domesticRoutes": "Rotas Nacionais",
+    "internationalRoutes": "Rotas Internacionais",
+    "caseStudies": "Casos de Estudo",
+    "inquiry": "Reservar Agora",
+    "contact": "Contacto",
+    "languageSwitcher": "Mudar Idioma"
+  },
+  
+  "hero": {
+    "title": "Conecte-se com Líderes de Inovação Global",
+    "subtitle": "Experiências Exclusivas de Benchmarking",
+    "description": "Tours executivos para empresas de classe mundial em 42 países. Transforme a sua equipa através do acesso direto à Tesla, ByteDance, pioneiros da Indústria 4.0 alemã e muito mais.",
+    "ctaPrimary": "Explorar Rotas",
+    "ctaSecondary": "Solicitar Tour Personalizado"
+  },
+  
+  "stats": {
+    "delegations": "285+",
+    "delegationsLabel": "Delegações Bem-sucedidas",
+    "countries": "42",
+    "countriesLabel": "Países Cobertos",
+    "loyalty": "98%",
+    "loyaltyLabel": "Taxa de Fidelização",
+    "companies": "500+",
+    "companiesLabel": "Empresas Parceiras"
+  },
+  
+  "services": {
+    "title": "Experiências de Benchmarking de Classe Mundial",
+    "subtitle": "Tours de estudo personalizados que impulsionam a transformação empresarial real",
+    "domesticTitle": "Centros de Inovação da China",
+    "domesticDescription": "Acesso aos ecossistemas de inovação de Xangai, Shenzhen, Suzhou e líderes em manufatura inteligente",
+    "internationalTitle": "Rotas Globais",
+    "internationalDescription": "Indústria 4.0 alemã, tecnologia do Vale do Silício, inovação portuguesa e manufatura lean japonesa",
+    "consultingTitle": "Consultoria Personalizada",
+    "consultingDescription": "Diagnósticos de manufatura inteligente, roteiros de transformação digital, workshops de inovação"
+  },
+  
+  "howItWorks": {
+    "title": "Como Funciona",
+    "step1Title": "Consultoria",
+    "step1Description": "Compreendemos os seus objetivos, desafios do setor e metas de aprendizagem",
+    "step2Title": "Itinerário Personalizado",
+    "step2Description": "Programa sob medida com acesso exclusivo a empresas e facilitadores especializados",
+    "step3Title": "Acesso Exclusivo",
+    "step3Description": "Visite empresas de referência com tours nos bastidores e diálogos executivos",
+    "step4Title": "Suporte Pós-Visita",
+    "step4Description": "Orientação de implementação, sessões de acompanhamento e colaboração contínua"
+  },
+  
+  "cta": {
+    "title": "Pronto para Transformar a Sua Equipa?",
+    "description": "Junte-se a mais de 285 organizações que elevaram a sua capacidade de inovação através dos programas BenchLink+",
+    "button": "Solicitar Tour Personalizado"
+  },
+  
+  "footer": {
+    "about": "Sobre a BenchLink+",
+    "aboutDescription": "Plataforma global líder em tours de benchmarking executivo e expedições de inovação. Acesso direto a empresas Fortune 500 em 42 países.",
+    "quickLinks": "Links Rápidos",
+    "services": "Serviços",
+    "legal": "Legal",
+    "privacyPolicy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "cookies": "Política de Cookies",
+    "contact": "Informações de Contacto",
+    "email": "Email",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "followUs": "Siga-nos",
+    "rights": "© 2024 BenchLink+ & Wanxi Tech. Todos os direitos reservados.",
+    "icpNotice": ""
+  },
+  
+  "form": {
+    "nameLabel": "Nome Completo",
+    "namePlaceholder": "João Silva",
+    "emailLabel": "Endereço de Email",
+    "emailPlaceholder": "joao@empresa.com",
+    "phoneLabel": "Número de Telefone",
+    "phonePlaceholder": "+351 91 234 5678",
+    "companyLabel": "Nome da Empresa",
+    "companyPlaceholder": "Sua Empresa",
+    "jobTitleLabel": "Cargo",
+    "jobTitlePlaceholder": "CEO, CTO, VP Operações, etc.",
+    "industryLabel": "Setor",
+    "industryPlaceholder": "Selecione o seu setor",
+    "participantsLabel": "Número de Participantes",
+    "routeLabel": "Rota/Destino Preferido",
+    "routePlaceholder": "Selecione uma rota ou Personalizado",
+    "datesLabel": "Datas Preferidas",
+    "datesPlaceholder": "Selecione intervalo de datas ou Flexível",
+    "budgetLabel": "Faixa Orçamental",
+    "budgetPlaceholder": "Selecione faixa orçamental",
+    "messageLabel": "Requisitos Específicos",
+    "messagePlaceholder": "Conte-nos sobre os seus objetivos, desafios e o que espera alcançar...",
+    "required": "Obrigatório",
+    "submit": "Enviar Pedido",
+    "submitting": "A enviar...",
+    "successTitle": "Obrigado!",
+    "successMessage": "Recebemos o seu pedido e entraremos em contacto em até 24 horas.",
+    "errorMessage": "Algo correu mal. Por favor, tente novamente ou contacte-nos diretamente."
+  }
+}
