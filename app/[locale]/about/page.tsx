@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
@@ -17,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const tCommon = useTranslations('common');
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   const values = [
     {
@@ -54,7 +53,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-32">
+      <section className="relative bg-primary text-white py-20 md:py-32">
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">

@@ -35,7 +35,7 @@ export function Footer({ locale }: FooterProps) {
   ];
 
   return (
-    <footer className="bg-primary text-white" role="contentinfo">
+    <footer className="bg-neutral-50 border-t border-neutral-200 text-neutral-700" role="contentinfo">
       {/* Main footer content */}
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -50,21 +50,21 @@ export function Footer({ locale }: FooterProps) {
                   className="object-contain transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <span className="text-white font-bold text-xl">
+              <span className="text-neutral-900 font-bold text-xl">
                 BenchLink+
               </span>
             </Link>
-            <p className="text-neutral-200 text-sm leading-relaxed mb-6">
+            <p className="text-neutral-600 text-sm leading-relaxed mb-6">
               {t('aboutDescription')}
             </p>
             
             {/* Trust badges / Certifications */}
             <div className="flex items-center gap-3 flex-wrap">
-              <div className="trust-badge bg-white/10 border-white/20 text-white">
+              <div className="trust-badge bg-primary/10 border-primary/20 text-neutral-700">
                 <span className="text-gold font-bold">285+</span>
                 <span className="text-xs">Delegations</span>
               </div>
-              <div className="trust-badge bg-white/10 border-white/20 text-white">
+              <div className="trust-badge bg-primary/10 border-primary/20 text-neutral-700">
                 <span className="text-gold font-bold">98%</span>
                 <span className="text-xs">Loyalty</span>
               </div>
@@ -73,7 +73,7 @@ export function Footer({ locale }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">
+            <h3 className="text-lg font-bold mb-4 text-neutral-900">
               {t('quickLinks')}
             </h3>
             <ul className="space-y-3">
@@ -81,7 +81,7 @@ export function Footer({ locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-200 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
+                    className="text-neutral-600 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
                   >
                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                       {link.label}
@@ -94,7 +94,7 @@ export function Footer({ locale }: FooterProps) {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">
+            <h3 className="text-lg font-bold mb-4 text-neutral-900">
               {t('services')}
             </h3>
             <ul className="space-y-3">
@@ -102,7 +102,7 @@ export function Footer({ locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-200 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
+                    className="text-neutral-600 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
                   >
                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                       {link.label}
@@ -113,7 +113,7 @@ export function Footer({ locale }: FooterProps) {
             </ul>
 
             {/* Legal links */}
-            <h3 className="text-lg font-bold mb-4 mt-8 text-white">
+            <h3 className="text-lg font-bold mb-4 mt-8 text-neutral-900">
               {t('legal')}
             </h3>
             <ul className="space-y-3">
@@ -121,7 +121,7 @@ export function Footer({ locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-neutral-200 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
+                    className="text-neutral-600 hover:text-accent transition-colors duration-200 text-sm inline-flex items-center group"
                   >
                     <span className="group-hover:translate-x-1 transition-transform duration-200">
                       {link.label}
@@ -134,14 +134,14 @@ export function Footer({ locale }: FooterProps) {
 
           {/* Contact info */}
           <div>
-            <h3 className="text-lg font-bold mb-4 text-white">
+            <h3 className="text-lg font-bold mb-4 text-neutral-900">
               {t('contact')}
             </h3>
             <ul className="space-y-4">
               <li>
                 <a
                   href="mailto:contact@benchlinkplus.co"
-                  className="text-neutral-200 hover:text-accent transition-colors duration-200 text-sm inline-flex items-start gap-3 group"
+                  className="text-neutral-600 hover:text-accent transition-colors duration-200 text-sm inline-flex items-start gap-3 group"
                 >
                   <Mail className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -152,7 +152,7 @@ export function Footer({ locale }: FooterProps) {
               <li>
                 <a
                   href="tel:+8613800000000"
-                  className="text-neutral-200 hover:text-accent transition-colors duration-200 text-sm inline-flex items-start gap-3 group"
+                  className="text-neutral-600 hover:text-accent transition-colors duration-200 text-sm inline-flex items-start gap-3 group"
                 >
                   <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                   <span className="group-hover:translate-x-1 transition-transform duration-200">
@@ -160,7 +160,7 @@ export function Footer({ locale }: FooterProps) {
                   </span>
                 </a>
               </li>
-              <li className="text-neutral-200 text-sm inline-flex items-start gap-3">
+              <li className="text-neutral-600 text-sm inline-flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <span>
                   Shanghai, China
@@ -170,7 +170,7 @@ export function Footer({ locale }: FooterProps) {
 
             {/* Social links */}
             <div className="mt-6">
-              <h4 className="text-sm font-semibold mb-3 text-white">
+              <h4 className="text-sm font-semibold mb-3 text-neutral-900">
                 {t('followUs')}
               </h4>
               <div className="flex items-center gap-3">
@@ -178,7 +178,7 @@ export function Footer({ locale }: FooterProps) {
                   href="https://linkedin.com/company/benchlink"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 bg-white/10 hover:bg-accent rounded-lg transition-colors duration-200"
+                  className="p-2 bg-neutral-100 hover:bg-accent hover:text-white rounded-lg transition-colors duration-200"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" aria-hidden="true" />
@@ -186,7 +186,7 @@ export function Footer({ locale }: FooterProps) {
                 
                 {/* WeChat QR code - for Chinese market */}
                 {locale === 'zh' && (
-                  <div className="p-2 bg-white/10 hover:bg-accent rounded-lg transition-colors duration-200 cursor-pointer group relative">
+                  <div className="p-2 bg-neutral-100 hover:bg-accent hover:text-white rounded-lg transition-colors duration-200 cursor-pointer group relative">
                     <svg 
                       className="w-5 h-5" 
                       fill="currentColor" 
@@ -210,9 +210,9 @@ export function Footer({ locale }: FooterProps) {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-white/10">
+      <div className="border-t border-neutral-200">
         <div className="container-custom py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-300">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-neutral-600">
             <p>
               {t('rights').replace('2024', currentYear.toString())}
             </p>
@@ -224,9 +224,6 @@ export function Footer({ locale }: FooterProps) {
               </p>
             )}
             
-            <p className="text-xs">
-              Built with ❤️ for innovation leaders worldwide
-            </p>
           </div>
         </div>
       </div>

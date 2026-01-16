@@ -1,4 +1,3 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/Button';
@@ -14,8 +13,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function ServicesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const tServices = useTranslations('services');
-  const tCommon = useTranslations('common');
+  const tServices = await getTranslations({ locale, namespace: 'services' });
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   // Domestic routes data
   const domesticRoutes = [
@@ -84,7 +83,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-32">
+      <section className="relative bg-primary text-white py-20 md:py-32">
         <div className="container-custom">
           <div className="max-w-4xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -160,7 +159,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ local
       {/* Custom Consulting Section */}
       <section className="section">
         <div className="container-custom">
-          <div className="bg-gradient-to-br from-primary to-primary-dark text-white rounded-3xl p-12 md:p-16">
+          <div className="bg-primary text-white rounded-3xl p-12 md:p-16">
             <div className="max-w-3xl mx-auto text-center">
               <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
                 <Lightbulb className="w-8 h-8" />

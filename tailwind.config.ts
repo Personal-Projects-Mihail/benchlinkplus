@@ -10,16 +10,16 @@ const config: Config = {
       colors: {
         // Primary brand colors from BenchLink+ logo
         primary: {
-          DEFAULT: '#1A3D7C',  // Logo blue - dominates 60-70%
-          dark: '#0D1F3E',
-          light: '#2E5BA8',
-          hover: '#153366',
+          DEFAULT: '#247ba0',  // Blue
+          dark: '#1A5A75',      // Darker variant for headers/footers
+          light: '#3A9BC7',     // Lighter variant
+          hover: '#1F6B8F',     // Slightly darker for hover
         },
         accent: {
-          DEFAULT: '#F26522',  // Logo orange - energetic accent 15-20%
-          dark: '#D94D1A',     // WCAG AAA compliant for white text
-          light: '#FF8A4C',
-          hover: '#E05A1A',
+          DEFAULT: '#d36135',  // Orange
+          dark: '#B85128',     // Darker variant for hover states
+          light: '#E57A55',    // Lighter variant
+          hover: '#C65B2E',    // Hover state
         },
         // Neutral backgrounds
         neutral: {
@@ -118,7 +118,7 @@ const config: Config = {
       boxShadow: {
         'card': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
         'card-hover': '0 10px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-        'xl-blue': '0 20px 25px -5px rgba(26, 61, 124, 0.1), 0 8px 10px -6px rgba(26, 61, 124, 0.1)',
+        'xl-blue': '0 20px 25px -5px rgba(36, 123, 160, 0.1), 0 8px 10px -6px rgba(36, 123, 160, 0.1)',
       },
       borderRadius: {
         '4xl': '2rem',

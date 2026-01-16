@@ -1,8 +1,6 @@
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { ServiceCard, StatCard } from '@/components/ui/Card';
 import { ArrowRight, Globe, Users, Award, TrendingUp, Factory, Plane, Lightbulb } from 'lucide-react';
@@ -24,24 +22,17 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = useTranslations('hero');
-  const tStats = useTranslations('stats');
-  const tServices = useTranslations('services');
-  const tHowItWorks = useTranslations('howItWorks');
-  const tCta = useTranslations('cta');
-  const tCommon = useTranslations('common');
+  const t = await getTranslations({ locale, namespace: 'hero' });
+  const tStats = await getTranslations({ locale, namespace: 'stats' });
+  const tServices = await getTranslations({ locale, namespace: 'services' });
+  const tHowItWorks = await getTranslations({ locale, namespace: 'howItWorks' });
+  const tCta = await getTranslations({ locale, namespace: 'cta' });
+  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary-dark to-primary min-h-[90vh] flex items-center overflow-hidden">
-        {/* Background pattern overlay */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
+      <section className="relative bg-primary min-h-[90vh] flex items-center overflow-hidden">
 
         <div className="container-custom relative z-10 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -214,7 +205,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
           <div className="grid md:grid-cols-4 gap-8 relative">
             {/* Connection lines (hidden on mobile) */}
-            <div className="hidden md:block absolute top-12 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary opacity-20" />
+            <div className="hidden md:block absolute top-12 left-0 right-0 h-1 bg-primary opacity-20" />
 
             {[1, 2, 3, 4].map((step) => (
               <div key={step} className="relative">
@@ -236,13 +227,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-to-br from-primary to-primary-dark text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }} />
-        </div>
+      <section className="section bg-primary text-white relative overflow-hidden">
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">

@@ -151,7 +151,7 @@ export default async function RouteDetailPage({
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/60" />
+        <div className="absolute inset-0 bg-primary/80" />
         
         <div className="container-custom relative z-10 text-white">
           <div className="max-w-3xl">

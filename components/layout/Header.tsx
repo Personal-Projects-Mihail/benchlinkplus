@@ -62,8 +62,8 @@ export function Header({ locale }: HeaderProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-primary shadow-lg py-3'
-            : 'bg-primary/95 backdrop-blur-sm py-4'
+            ? 'bg-white shadow-lg py-3'
+            : 'bg-white/95 backdrop-blur-sm py-4'
         }`}
       >
         <div className="container-custom">
@@ -83,7 +83,7 @@ export function Header({ locale }: HeaderProps) {
                   priority
                 />
               </div>
-              <span className="text-white font-bold text-xl md:text-2xl hidden sm:block">
+              <span className="text-neutral-900 font-bold text-xl md:text-2xl hidden sm:block">
                 BenchLink+
               </span>
             </Link>
@@ -94,7 +94,7 @@ export function Header({ locale }: HeaderProps) {
                 <div key={link.href} className="relative group">
                   <Link
                     href={link.href}
-                    className="text-white hover:text-accent transition-colors duration-200 font-medium text-base"
+                    className="text-neutral-700 hover:text-accent transition-colors duration-200 font-medium text-base"
                   >
                     {link.label}
                   </Link>
@@ -137,7 +137,7 @@ export function Header({ locale }: HeaderProps) {
               
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+                className="text-neutral-700 p-2 hover:bg-neutral-100 rounded-lg transition-colors"
                 aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
                 aria-expanded={isMobileMenuOpen}
               >

@@ -4,8 +4,8 @@
 
 :root {
   /* ===== PRIMARY COLORS (From BenchLink+ Logo) ===== */
-  --color-primary-blue: #1A3D7C;      /* Logo blue - dominates ~60-70% */
-  --color-accent-orange: #F26522;     /* Logo orange - energetic accent ~15-20% */
+  --color-primary-blue: #247ba0;      /* Logo blue ~60-70% */
+  --color-accent-orange: #d36135;     /* Logo orange ~15-20% */
 
   /* ===== NEUTRAL BACKGROUNDS ===== */
   --color-background-white: #FFFFFF;  /* Clean backgrounds ~70% */
@@ -168,10 +168,10 @@
 }
 
 @layer utilities {
-  /* Text gradient utilities */
-  .text-gradient-blue-orange {
+  /* Text gradient utilities - removed gradients */
+  /* .text-gradient-blue-orange {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
-  }
+  } */
   
   /* Container utilities */
   .max-w-container {

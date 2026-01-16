@@ -54,7 +54,7 @@ export default function InquiryPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary to-primary-dark text-white py-20 md:py-24">
+      <section className="relative bg-primary text-white py-20 md:py-24">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
