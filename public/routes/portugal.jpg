@@ -1,0 +1,30 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="portugalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E5BA8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A3D7C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#portugalGrad)"/>
+  
+  <!-- European/Bridge connection symbol -->
+  <g opacity="0.4">
+    <ellipse cx="200" cy="350" rx="100" ry="60" fill="none" stroke="#F26522" stroke-width="4"/>
+    <ellipse cx="600" cy="350" rx="100" ry="60" fill="none" stroke="#F26522" stroke-width="4"/>
+    
+    <!-- Bridge connecting -->
+    <path d="M 300,350 Q 400,250 500,350" fill="none" stroke="#F26522" stroke-width="6"/>
+    <circle cx="300" cy="350" r="12" fill="#F26522"/>
+    <circle cx="500" cy="350" r="12" fill="#F26522"/>
+    <circle cx="400" cy="280" r="8" fill="white"/>
+  </g>
+  
+  <!-- EU stars motif -->
+  <g opacity="0.5" fill="#F26522">
+    <path d="M 150,120 L 157,142 L 180,142 L 161,156 L 168,178 L 150,164 L 132,178 L 139,156 L 120,142 L 143,142 Z"/>
+    <path d="M 650,120 L 657,142 L 680,142 L 661,156 L 668,178 L 650,164 L 632,178 L 639,156 L 620,142 L 643,142 Z"/>
+  </g>
+  
+  <text x="400" y="550" font-size="42" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700">Portugal</text>
+</svg>

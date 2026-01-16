@@ -1,0 +1,38 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="missionGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5BA8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="800" fill="url(#missionGrad)"/>
+  
+  <!-- Global network visualization -->
+  <g opacity="0.4">
+    <!-- Globe wireframe -->
+    <circle cx="600" cy="400" r="250" fill="none" stroke="#F26522" stroke-width="3"/>
+    <ellipse cx="600" cy="400" rx="250" ry="80" fill="none" stroke="#F26522" stroke-width="2"/>
+    <ellipse cx="600" cy="400" rx="250" ry="150" fill="none" stroke="#F26522" stroke-width="2"/>
+    <line x1="350" y1="400" x2="850" y2="400" stroke="#F26522" stroke-width="2"/>
+    <line x1="600" y1="150" x2="600" y2="650" stroke="#F26522" stroke-width="2"/>
+    
+    <!-- Connection nodes -->
+    <circle cx="450" cy="280" r="12" fill="#F26522"/>
+    <circle cx="750" cy="320" r="12" fill="#F26522"/>
+    <circle cx="520" cy="520" r="12" fill="white"/>
+    <circle cx="680" cy="480" r="12" fill="white"/>
+    <circle cx="600" cy="200" r="12" fill="#F26522"/>
+  </g>
+  
+  <!-- Team/collaboration symbol -->
+  <g transform="translate(200, 100)" opacity="0.5" fill="white">
+    <circle cx="0" cy="0" r="25"/>
+    <circle cx="80" cy="0" r="25"/>
+    <circle cx="160" cy="0" r="25"/>
+    <circle cx="40" cy="60" r="25"/>
+    <circle cx="120" cy="60" r="25"/>
+  </g>
+  
+  <text x="600" y="750" font-size="48" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600">Our Mission: Connecting Global Innovation</text>
+</svg>

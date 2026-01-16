@@ -1,0 +1,39 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2E5BA8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A3D7C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#ogGrad)"/>
+  
+  <!-- Dot pattern -->
+  <g opacity="0.1">
+    <circle cx="50" cy="50" r="2" fill="white"/>
+    <circle cx="100" cy="50" r="2" fill="white"/>
+    <circle cx="150" cy="50" r="2" fill="white"/>
+    <!-- Pattern repeated - simplified for brevity -->
+  </g>
+  
+  <!-- Logo area -->
+  <g transform="translate(100, 200)">
+    <rect width="180" height="180" fill="#F26522" rx="20"/>
+    <text x="90" y="110" font-size="48" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700">B+</text>
+  </g>
+  
+  <!-- Text content -->
+  <g transform="translate(350, 250)">
+    <text x="0" y="0" font-size="56" fill="white" font-family="Inter, Arial, sans-serif" font-weight="700">BenchLink+</text>
+    <text x="0" y="60" font-size="28" fill="#F26522" font-family="Inter, Arial, sans-serif" font-weight="500">Executive Benchmarking Tours</text>
+    <text x="0" y="100" font-size="24" fill="white" font-family="Inter, Arial, sans-serif" font-weight="400" opacity="0.9">Innovation Expeditions Across 42 Countries</text>
+  </g>
+  
+  <!-- Stats -->
+  <g transform="translate(100, 520)" fill="white" opacity="0.8">
+    <text x="0" y="0" font-size="18" font-family="Inter, Arial, sans-serif">285+ Delegations</text>
+    <text x="220" y="0" font-size="18" font-family="Inter, Arial, sans-serif">42 Countries</text>
+    <text x="420" y="0" font-size="18" font-family="Inter, Arial, sans-serif">98% Client Loyalty</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="autoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5BA8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#autoGrad)"/>
+  
+  <!-- Car silhouette -->
+  <g transform="translate(600, 400)" opacity="0.3" fill="#F26522">
+    <ellipse cx="150" cy="120" rx="50" ry="45"/>
+    <ellipse cx="450" cy="120" rx="50" ry="45"/>
+    <rect x="100" y="50" width="400" height="70" rx="15"/>
+    <path d="M 120,50 L 180,0 L 420,0 L 480,50 Z"/>
+  </g>
+  
+  <!-- Digital transformation elements -->
+  <g opacity="0.4">
+    <circle cx="300" cy="300" r="80" fill="none" stroke="#F26522" stroke-width="4"/>
+    <circle cx="1620" cy="780" r="100" fill="none" stroke="white" stroke-width="3"/>
+    <line x1="380" y1="300" x2="1520" y2="780" stroke="#F26522" stroke-width="3" stroke-dasharray="10,10"/>
+    
+    <!-- Data points -->
+    <circle cx="300" cy="300" r="15" fill="#F26522"/>
+    <circle cx="1620" cy="780" r="18" fill="white"/>
+    <circle cx="960" cy="540" r="12" fill="#F26522"/>
+  </g>
+  
+  <!-- Industry 4.0 icon -->
+  <g transform="translate(1400, 200)" opacity="0.5">
+    <rect x="0" y="0" width="200" height="200" fill="none" stroke="#F26522" stroke-width="4" rx="10"/>
+    <text x="100" y="120" font-size="80" fill="#F26522" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700">4.0</text>
+  </g>
+  
+  <text x="960" y="950" font-size="56" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="600">Automotive Digital Transformation</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="germanyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D1F3E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1920" height="1080" fill="url(#germanyGrad)"/>
+  
+  <!-- Factory/Industry 4.0 iconography -->
+  <g transform="translate(400, 300)" opacity="0.4">
+    <!-- Gear/cog representing Industry 4.0 -->
+    <circle cx="250" cy="200" r="150" fill="none" stroke="#F26522" stroke-width="8"/>
+    <circle cx="250" cy="200" r="100" fill="none" stroke="#F26522" stroke-width="6"/>
+    
+    <!-- Cog teeth -->
+    <g fill="#F26522">
+      <rect x="240" y="30" width="20" height="40" rx="4"/>
+      <rect x="240" y="330" width="20" height="40" rx="4"/>
+      <rect x="80" y="190" width="40" height="20" rx="4"/>
+      <rect x="380" y="190" width="40" height="20" rx="4"/>
+    </g>
+  </g>
+  
+  <!-- Digital network lines -->
+  <g opacity="0.3" stroke="white" stroke-width="2" fill="none">
+    <path d="M 200 200 L 400 350 L 650 250 L 850 400"/>
+    <path d="M 1200 300 L 1400 500 L 1600 400"/>
+    <circle cx="200" cy="200" r="8" fill="white"/>
+    <circle cx="650" cy="250" r="8" fill="#F26522"/>
+    <circle cx="1400" cy="500" r="8" fill="white"/>
+  </g>
+  
+  <text x="960" y="900" font-size="72" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700">Germany Industry 4.0</text>
+  <text x="960" y="980" font-size="36" fill="#F26522" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="500">Smart Factories & Advanced Manufacturing</text>
+</svg>

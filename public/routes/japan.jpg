@@ -1,0 +1,30 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="japanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D1F3E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="url(#japanGrad)"/>
+  
+  <!-- Japanese rising sun circle -->
+  <circle cx="400" cy="250" r="100" fill="none" stroke="#F26522" stroke-width="6" opacity="0.6"/>
+  <circle cx="400" cy="250" r="70" fill="#F26522" opacity="0.3"/>
+  
+  <!-- Lean/Kaizen continuous improvement cycle arrows -->
+  <g opacity="0.5" fill="none" stroke="#F26522" stroke-width="4">
+    <path d="M 250,400 Q 200,450 250,500" stroke-linecap="round"/>
+    <path d="M 550,400 Q 600,450 550,500" stroke-linecap="round"/>
+    <polygon points="240,495 250,500 255,490" fill="#F26522"/>
+    <polygon points="560,495 550,500 545,490" fill="#F26522"/>
+  </g>
+  
+  <!-- Quality symbol (checkmark in circle) -->
+  <g transform="translate(650, 150)" opacity="0.5">
+    <circle cx="0" cy="0" r="40" fill="none" stroke="white" stroke-width="3"/>
+    <path d="M -15,0 L -5,12 L 18,-15" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  
+  <text x="400" y="550" font-size="42" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700">Japan</text>
+</svg>

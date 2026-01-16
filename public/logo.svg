@@ -1,0 +1,24 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3D7C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5BA8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="200" cy="200" r="180" fill="url(#logoGradient)"/>
+  
+  <!-- Abstract "B+" mark -->
+  <g transform="translate(100, 100)">
+    <!-- B shape -->
+    <path d="M 50 20 L 50 180 L 120 180 C 140 180 160 165 160 145 C 160 130 150 120 140 115 C 150 110 160 100 160 85 C 160 65 140 50 120 50 L 50 50 Z M 80 70 L 115 70 C 125 70 130 75 130 85 C 130 95 125 100 115 100 L 80 100 Z M 80 120 L 120 120 C 130 120 135 130 135 145 C 135 155 130 160 120 160 L 80 160 Z" fill="#F26522"/>
+    
+    <!-- Plus symbol -->
+    <rect x="175" y="60" width="35" height="100" fill="#F26522" rx="5"/>
+    <rect x="155" y="80" width="75" height="35" fill="#F26522" rx="5"/>
+  </g>
+  
+  <!-- Brand name -->
+  <text x="200" y="340" font-size="42" fill="white" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-weight="700">BenchLink+</text>
+</svg>
