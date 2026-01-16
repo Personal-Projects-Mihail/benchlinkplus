@@ -45,8 +45,12 @@ export function Card({
   );
 
   if (as === 'link' && 'href' in props) {
+    const { href } = props;
+    if (!href) {
+      return null;
+    }
     return (
-      <Link href={props.href} className={baseStyles}>
+      <Link href={href} className={baseStyles}>
         {children}
       </Link>
     );

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://benchlinkplus.co';
 

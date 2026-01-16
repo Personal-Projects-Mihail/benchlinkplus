@@ -1,4 +1,3 @@
-import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import { CaseStudyCard } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
 
 export default async function CaseStudiesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   // Sample case studies data (would come from CMS in production)
   const caseStudies = [

@@ -1,12 +1,10 @@
-import { getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { Award, Target, Users, Zap, CheckCircle, Globe } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale });
+  await params;
   
   return {
     title: 'About BenchLink+ | Leading Global Benchmarking Platform',
@@ -16,7 +14,6 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const tCommon = await getTranslations({ locale, namespace: 'common' });
 
   const values = [
     {

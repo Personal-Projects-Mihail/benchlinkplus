@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: 'footer' });
   const tForm = await getTranslations({ locale, namespace: 'form' });
 
   const contactMethods = [

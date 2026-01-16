@@ -100,7 +100,11 @@ export function Button({
   );
 
   if (as === 'link' && 'href' in props) {
-    const { href, external = false } = props;
+    const { href, external = false } = props as ButtonAsLink;
+    
+    if (!href) {
+      return null;
+    }
     
     if (external || href.startsWith('http')) {
       return (

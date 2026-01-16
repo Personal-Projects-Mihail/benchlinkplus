@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/Button';
 import { RouteCard } from '@/components/ui/Card';
 import { Factory, Plane, Lightbulb, ArrowRight } from 'lucide-react';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+export async function generateMetadata({ params: _params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   return {
     title: 'Benchmarking Services | Study Tours & Executive Delegations',
     description: 'Explore our curated benchmarking routes across China and internationally. From Industry 4.0 to AI innovation, customize your executive learning experience.',
