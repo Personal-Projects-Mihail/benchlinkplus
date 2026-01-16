@@ -51,10 +51,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ 
-  params: { slug } 
+  params
 }: { 
-  params: { slug: string } 
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
+  const { slug } = await params;
   const caseStudy = caseStudiesData[slug as keyof typeof caseStudiesData];
   
   if (!caseStudy) {
@@ -69,11 +70,12 @@ export async function generateMetadata({
   };
 }
 
-export default function CaseStudyDetailPage({ 
-  params: { slug, locale } 
+export default async function CaseStudyDetailPage({ 
+  params
 }: { 
-  params: { slug: string; locale: string } 
+  params: Promise<{ slug: string; locale: string }>
 }) {
+  const { slug, locale } = await params;
   const caseStudy = caseStudiesData[slug as keyof typeof caseStudiesData];
 
   if (!caseStudy) {

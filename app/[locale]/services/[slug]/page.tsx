@@ -109,10 +109,11 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ 
-  params: { slug } 
+  params
 }: { 
-  params: { slug: string } 
+  params: Promise<{ slug: string }>
 }): Promise<Metadata> {
+  const { slug } = await params;
   const route = routesData[slug as keyof typeof routesData];
   
   if (!route) {
@@ -127,11 +128,12 @@ export async function generateMetadata({
   };
 }
 
-export default function RouteDetailPage({ 
-  params: { slug, locale } 
+export default async function RouteDetailPage({ 
+  params
 }: { 
-  params: { slug: string; locale: string } 
+  params: Promise<{ slug: string; locale: string }>
 }) {
+  const { slug, locale } = await params;
   const route = routesData[slug as keyof typeof routesData];
 
   if (!route) {

@@ -7,7 +7,8 @@ import { Button } from '@/components/ui/Button';
 import { ServiceCard, StatCard } from '@/components/ui/Card';
 import { ArrowRight, Globe, Users, Award, TrendingUp, Factory, Plane, Lightbulb } from 'lucide-react';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'hero' });
   
   return {
@@ -21,7 +22,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function HomePage({ params: { locale } }: { params: { locale: string } }) {
+export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('hero');
   const tStats = useTranslations('stats');
   const tServices = useTranslations('services');

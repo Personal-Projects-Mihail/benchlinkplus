@@ -2,9 +2,12 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { useParams } from 'next/navigation';
 import { CheckCircle, Send } from 'lucide-react';
 
-export default function InquiryPage({ params: { locale } }: { params: { locale: string } }) {
+export default function InquiryPage() {
+  const params = useParams();
+  const locale = params.locale as string;
   const t = useTranslations('form');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);

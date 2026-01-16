@@ -2,7 +2,8 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { Inter } from 'next/font/google';
-import { locales, localeMetadata } from '@/lib/i18n';
+import { routing } from '@/i18n/routing';
+import { localeMetadata } from '@/lib/i18n';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import '../globals.css';
@@ -14,18 +15,21 @@ const inter = Inter({
 });
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  // Await params as required by Next.js 15
+  const { locale } = await params;
+
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 

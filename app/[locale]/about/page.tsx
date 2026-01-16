@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
 import { Award, Target, Users, Zap, CheckCircle, Globe } from 'lucide-react';
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
   const t = await getTranslations({ locale });
   
   return {
@@ -14,7 +15,8 @@ export async function generateMetadata({ params: { locale } }: { params: { local
   };
 }
 
-export default function AboutPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const tCommon = useTranslations('common');
 
   const values = [

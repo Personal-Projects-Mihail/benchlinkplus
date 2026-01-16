@@ -9,7 +9,8 @@ export const metadata: Metadata = {
   description: 'Discover how leading organizations have transformed their business through BenchLink+ benchmarking programs. Real results from 285+ successful delegations.',
 };
 
-export default function CaseStudiesPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function CaseStudiesPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const tCommon = useTranslations('common');
 
   // Sample case studies data (would come from CMS in production)

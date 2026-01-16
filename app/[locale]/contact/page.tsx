@@ -7,7 +7,8 @@ export const metadata: Metadata = {
   description: 'Contact BenchLink+ for inquiries about executive benchmarking tours, innovation expeditions, and custom learning programs.',
 };
 
-export default function ContactPage({ params: { locale } }: { params: { locale: string } }) {
+export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('footer');
   const tForm = useTranslations('form');
 
